@@ -17,6 +17,7 @@ Simplest way for using this libary with NuGet. Folow this steps:
 2. At the  App.xaml.cs file replace folowing line:
 
 		RootFrame = new PhoneApplicationFrame();
+		
    with
 
         RootFrame = new Delay.AnimateOrientationChangesFrame();
