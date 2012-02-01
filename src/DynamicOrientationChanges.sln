@@ -1,0 +1,44 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010 Express for Windows Phone
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AnimateOrientationChanges", "AnimateOrientationChanges\AnimateOrientationChanges.csproj", "{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FadeOrientationChanges", "FadeOrientationChanges\FadeOrientationChanges.csproj", "{A0589205-E65E-481B-90A0-336E3A9148B3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DynamicOrientationChanges", "DynamicOrientationChanges\DynamicOrientationChanges.csproj", "{33913A51-53D1-4CA1-A8E0-57FE5314B705}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HybridOrientationChanges", "HybridOrientationChanges\HybridOrientationChanges.csproj", "{6EC70C5E-0A00-45B6-BAFE-20DD19149500}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51EFC91A-7BB3-4023-B535-4F3E25C5F2FB}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A0589205-E65E-481B-90A0-336E3A9148B3}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{33913A51-53D1-4CA1-A8E0-57FE5314B705}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33913A51-53D1-4CA1-A8E0-57FE5314B705}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33913A51-53D1-4CA1-A8E0-57FE5314B705}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33913A51-53D1-4CA1-A8E0-57FE5314B705}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6EC70C5E-0A00-45B6-BAFE-20DD19149500}.Release|Any CPU.Deploy.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

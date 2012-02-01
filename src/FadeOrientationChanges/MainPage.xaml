@@ -1,0 +1,77 @@
+﻿<phone:PhoneApplicationPage 
+    x:Class="FadeOrientationChanges.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="PortraitOrLandscape" Orientation="Portrait"
+    mc:Ignorable="d" d:DesignWidth="480" d:DesignHeight="800"
+    shell:SystemTray.IsVisible="False">
+
+    <Grid Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Margin="24,24,0,12">
+            <TextBlock Text="FadeOrientationChanges" Style="{StaticResource PhoneTextNormalStyle}"/>
+            <TextBlock Text="fade" Margin="-3,-8,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
+        </StackPanel>
+
+        <Grid Grid.Row="1">
+            <Border BorderBrush="{StaticResource PhoneForegroundBrush}" BorderThickness="4">
+                <Border.Resources>
+                    <Style x:Key="RadioButtonStyle" TargetType="RadioButton">
+                        <Setter Property="Margin" Value="0 -10 0 -10"/>
+                    </Style>
+                </Border.Resources>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                        <RowDefinition Height="Auto"/>
+                        <RowDefinition/>
+                    </Grid.RowDefinitions>
+                    <CheckBox Grid.Row="1" Content="IsAnimationEnabled" IsChecked="True" Checked="HandleIsAnimationEnabledChanged" Unchecked="HandleIsAnimationEnabledChanged" />
+                    <StackPanel Grid.Row="3">
+                        <TextBlock Text="Duration" FontWeight="Bold"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition/>
+                                <RowDefinition/>
+                            </Grid.RowDefinitions>
+                            <RadioButton Grid.Column="0" Grid.Row="0" Content="0.2 seconds" Checked="HandleDurationChecked" Style="{StaticResource RadioButtonStyle}"/>
+                            <RadioButton Grid.Column="1" Grid.Row="0" Content="0.4 seconds" IsChecked="True" Checked="HandleDurationChecked" Style="{StaticResource RadioButtonStyle}"/>
+                            <RadioButton Grid.Column="0" Grid.Row="1" Content="0.8 seconds" Checked="HandleDurationChecked" Style="{StaticResource RadioButtonStyle}"/>
+                            <RadioButton Grid.Column="1" Grid.Row="1" Content="1 second" Checked="HandleDurationChecked" Style="{StaticResource RadioButtonStyle}"/>
+                        </Grid>
+                    </StackPanel>
+                    <StackPanel Grid.Row="5">
+                        <TextBlock Text="EasingFunction" FontWeight="Bold"/>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition/>
+                                <ColumnDefinition/>
+                            </Grid.ColumnDefinitions>
+                            <RadioButton Grid.Column="0" Content="CircleEase" Checked="HandleEasingFunctionChecked" Style="{StaticResource RadioButtonStyle}"/>
+                            <RadioButton Grid.Column="1" Content="QuadraticEase" IsChecked="True" Checked="HandleEasingFunctionChecked" Style="{StaticResource RadioButtonStyle}"/>
+                        </Grid>
+                    </StackPanel>
+                </Grid>
+            </Border>
+        </Grid>
+    </Grid>
+</phone:PhoneApplicationPage>
