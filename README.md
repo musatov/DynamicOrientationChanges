@@ -17,19 +17,15 @@ Simplest way for using this libary with NuGet. Folow this steps:
 2. At the  App.xaml.cs file replace folowing line:
 
 		RootFrame = new PhoneApplicationFrame();
-		
    with
 
         RootFrame = new Delay.AnimateOrientationChangesFrame();
-
    or
 
    		RootFrame = new Delay.FadeOrientationChangesFrame();
-
    or
 
    		RootFrame = new Delay.HybridOrientationChangesFrame();
-
    depend on animation type.
 
 Also you can setup animation Duration like this:
