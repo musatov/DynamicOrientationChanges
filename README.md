@@ -12,6 +12,7 @@ Simple library for enabling orientation changes animation for Windows Phone 7 Ap
 ## Using
 
 Simplest way for using this libary with NuGet. Folow this steps:
+
 1. Install [package](https://nuget.org/packages/DynamicOrientationChanges)
 2. At the  App.xaml.cs file replace folowing line:
 
